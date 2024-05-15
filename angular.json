@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Shopiny2": {
+    "shopiny": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/shopiny2",
+            "outputPath": "dist/shopiny",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -25,10 +25,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrap.css"
+              "src/styles.css"              
             ],
-            "scripts": []
+            "scripts": [
+    
+            ]
           },
           "configurations": {
             "production": {
@@ -61,10 +62,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Shopiny2:build:production"
+              "browserTarget": "shopiny:build:production"
             },
             "development": {
-              "browserTarget": "Shopiny2:build:development"
+              "browserTarget": "shopiny:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -72,7 +73,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Shopiny2:build"
+            "browserTarget": "shopiny:build"
           }
         },
         "test": {
@@ -97,6 +98,6 @@
     }
   },
   "cli": {
-    "analytics": "9cec50b7-edce-45aa-9e8d-6299760a16ed"
+    "analytics": "b0d6f092-cc32-48e9-b1e8-98bfa558fb05"
   }
 }
